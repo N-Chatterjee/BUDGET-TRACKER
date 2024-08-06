@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Tracker - Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Dashboard</h1>
+        <button onclick="window.location.href='history.html'">View Transactions</button>
+        <button onclick="showSaveModal()">Save Money</button>
+        <button onclick="showSpendModal()">Spend Money</button>
+        <button onclick="setGoal()">Set Budget Goal</button>
+        <button onclick="window.location.href='delete.html'">Delete Account</button>
+        <button onclick="logout()">Logout</button>
+
+        <!-- Modals for saving and spending money -->
+        <div id="save-modal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeSaveModal()">&times;</span>
+                <h2>Save Money</h2>
+                <input type="number" id="save-amount" placeholder="Amount" required>
+                <input type="text" id="save-description" placeholder="Description" required>
+                <button onclick="saveMoney()">Save</button>
+            </div>
+        </div>
+
+        <div id="spend-modal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeSpendModal()">&times;</span>
+                <h2>Spend Money</h2>
+                <input type="number" id="spend-amount" placeholder="Amount" required>
+                <input type="text" id="spend-description" placeholder="Description" required>
+                <button onclick="spendMoney()">Spend</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
