@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #e0f7fa; /* Light cyan background */
+    background: linear-gradient(135deg, #ffcccb, #cce7ff); /* Gradient background */
 }
 
 .container {
@@ -10,7 +10,7 @@ body {
     margin: auto;
     overflow: hidden;
     padding: 20px;
-    background-color: #ffffff; /* White background for container */
+    background: #ffffff; /* White background for container */
     border-radius: 8px; /* Rounded corners */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
 }
@@ -43,12 +43,12 @@ button:hover {
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgba(0, 0, 0, 0.5); /* Darker overlay */
+    background: rgba(0, 0, 0, 0.5); /* Darker overlay */
     padding-top: 60px;
 }
 
 .modal-content {
-    background-color: #ffffff; /* White background for modal */
+    background: linear-gradient(145deg, #ffffff, #e0e0e0); /* Light gradient background */
     margin: 5% auto;
     padding: 20px;
     border: 1px solid #00796b; /* Teal border */
